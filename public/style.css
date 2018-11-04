@@ -1,0 +1,22 @@
+.img-s
+{
+height:  150px;
+width: 200px;
+}
+form
+{
+display: flex;
+flex-direction: column;
+align-content: center;
+}
+
+#sdb
+{
+  margin-top: 10px;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}

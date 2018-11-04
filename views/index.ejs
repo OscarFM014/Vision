@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/style.css" type="text/css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="shortcut icon" type="image/ico" href="/pestaña.ico"/>
+  <title>Vision</title>
+</head>
+<body>
+
+  <div class="container">
+    <br> <br>
+    <center>
+    <img src="vision.png" class="responsive"/>
+    </center>
+    <%= typeof msg != 'undefined' ? msg : '' %>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="file-field input-field">
+        <div class="btn indigo darken-2">
+          <span>Subir Muestra</span>
+          <input name="myImage" type="file">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text">
+        </div>
+      </div>
+
+      <button type="submit" class="btn deep-purple accent-3" id="sb">Analizar Muestra</button>
+
+    </form>
+
+    <br>
+    <img src="<%= typeof file != 'undefined' ? file : 'https://www.freeiconspng.com/uploads/no-image-icon-13.png' %>" class="img-s" >
+  <!-- <a href="https://icons8.com">Icon pack by Icons8</a> -->
+    <p><%= typeof data != 'undefined' ? data : '' %></p>
+
+    <table>
+        <thead>
+          <tr>
+              <th>Tipo</th>
+              <th>Porcentaje</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><%= typeof clas != 'undefined' ? clas : '' %></td>
+            <td><%= typeof sc != 'undefined' ? Math.floor(sc * 100) + "%" : '' %></td>
+            <td><%= typeof th != 'undefined' ? Math.floor(th * 100) + "%" : '' %></td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>
