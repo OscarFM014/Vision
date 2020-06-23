@@ -13,7 +13,7 @@ You need to have a web navigator, preferably the most updated versions:
 > + Opera
 
 You need to have valids credential from:
-> +  [IBM Watson Visual Recognition](https://github.com/OscarFM014)
+> +  [IBM Watson Visual Recognition](https://www.ibm.com/mx-es/cloud/watson-visual-recognition)
 
 ### Installing ⚙️
 
