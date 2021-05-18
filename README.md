@@ -22,16 +22,21 @@ Install the dependencies
 ```sh
 $ npm install
 ```
+Update the dependencies
+
+```sh
+$ npm update
+```
 To serve in the browser
 
 ```sh
-$ npm start
+$ npm run start
 ```
 To visualize the web page on your web browser:
 > 1. Downlaod the zip on your computer
 > 2. Open your web browser
 > 3. Put the valid and unique credential on the space on the code on the JavaScritp document
-> 3. Open the index.html on your web browser
+> 3. See the localhost:8080 your web browser
 
 ## Build With 🛠
 + HTML5 - The web page structure
